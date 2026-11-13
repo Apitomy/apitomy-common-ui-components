@@ -20,7 +20,7 @@ export const FilterChips: FunctionComponent<FilterChipsProps> = (props: FilterCh
                 <Label variant="outline" key={idx} onClose={() => props.onRemoveCriteria(fc)}>
                     <b>{fc.filterBy.label}</b>
                     <span>: </span>
-                    <span>{fc.filterValue}</span>
+                    <span>{fc.filterLabel || fc.filterValue}</span>
                 </Label>
             ))}
         </LabelGroup>
